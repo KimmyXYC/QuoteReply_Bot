@@ -12,6 +12,7 @@ repositories {
 
 dependencies {
     implementation("io.github.kotlin-telegram-bot.kotlin-telegram-bot:telegram:6.3.0")
+    implementation("io.github.cdimascio:dotenv-kotlin:6.4.1")
     testImplementation(kotlin("test"))
 }
 
@@ -19,5 +20,5 @@ tasks.test {
     useJUnitPlatform()
 }
 kotlin {
-    jvmToolchain(24)
+    jvmToolchain(21)
 }
